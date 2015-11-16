@@ -1,0 +1,17 @@
+header {
+	margin-bottom:30px;
+}
+
+#menucomp, #datanascjogador {
+	width: 160px;
+}
+
+.rbusca:hover{
+	background: #DBDBDB;
+}
+
+#searchimage {
+	width: 100px;
+	height: 100px;
+	margin-left:20px;
+}

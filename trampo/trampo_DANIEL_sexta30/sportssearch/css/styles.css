@@ -1,0 +1,11 @@
+header {
+	margin-bottom:30px;
+}
+
+#menucomp, #datanascjogador {
+	width: 160px;
+}
+
+.rbusca:hover{
+	background: #DBDBDB;
+}

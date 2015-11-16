@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Sports Search - Home</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <script type="text/JavaScript" src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+
+    <body>
+        <header class="navbar navbar-default navbar-static-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">Sports Search</a>
+                </div>
+                <nav class="collapse navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3" id="leftCol">
+
+                    <div class="well"> 
+                        <ul class="nav nav-stacked" id="sidebar">
+                            <li><a href="#sec1" id="buscajogador">Buscar Jogadores</a></li>
+                            <li><a href="#sec2" id="buscatime">Buscar Times</a></li>
+                            <li><a href="#sec3" id="buscapremio">Buscar Prêmios</a></li>
+                        </ul>
+                    </div>
+
+                </div>  
+                <div class="col-md-9">
+                    <div id="menu" class="panel panel-default">
+                        <div class="panel-body">
+                            <h2 id="sec0" style="color:#363636;">Sports Seach  <img src="images/sports.png"></h2>
+                            <br>
+                            <h4>Sports Search é uma base de dados completa com tudo o que você precisa saber sobre seu ídolo!</h4>
+                            <h4>Escolha uma das opções ao lado <b style="color:red;">&laquo;</b> e comece a procurar.<img src="images/search.png" id="searchimage"></h4>
+                        </div>
+                    </div>
+
+                    <!-- Formulário de um jogador -->
+                    <div id="jogadorform">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h2 id="sec0">Buscar Jogadores</h2>
+                                Insira os dados para a busca do atleta desejado<br><br>
+                                <form role="form" method="get" action="BuscaJogador" id="fjogador">
+                                    <div class="form-group" id="formnomejogador">
+                                        <label class="control-label" for="nomejogador">Nome</label>
+                                        <input type="text" class="form-control" id="nomejogador" name="nome" placeholder="Nome">
+                                    </div>
+                                    <div class="panel panel-danger" id="erronomejogador">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Erro</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            O nome do jogador deve ser composto apenas por letras.
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="formsobrenomejogador">
+                                        <label class="control-label" for="sobrenomejogador">Sobrenome</label>
+                                        <input type="text" class="form-control" id="sobrenomejogador" name="sobrenome" placeholder="Sobrenome">
+                                    </div>
+                                    <div class="panel panel-danger" id="errosobrenomejogador">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Erro</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            O sobrenome do jogador deve ser composto apenas por letras.
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="datanascjogador">Data de Nascimento</label>
+                                        <input type="date" class="form-control" id="datanascjogador" name="datanasc">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="menucomp">Selecione o operador de comparação para a data de nascimento do jogador</label>
+                                        <select class="form-control" id="menucomp" name="comparacao">
+                                            <option value="igual">Igual</option>
+                                            <option value="diferente">Diferente</option>
+                                            <option value="maior">Maior</option>
+                                            <option value="maiorigual">Maior ou igual</option>
+                                            <option value="menor">Menor</option>
+                                            <option value="menorigual">Menor ou igual</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success">Buscar</button>
+                                        <button type="reset" class="btn btn-danger" id="jogadorclear">Limpar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulário de um time -->
+                    <div id="timeform">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h2 id="sec0">Buscar Times</h2>
+                                Insira os dados para a busca do time desejado<br><br>
+                                <form role="form" method="get" action="BuscaTime" id="ftime">
+                                    <div class="form-group" id="formnometime">
+                                        <label class="control-label" for="nometime">Nome</label>
+                                        <input type="text" class="form-control" id="nometime" name="nome" placeholder="Nome">
+                                    </div>
+                                    <div class="panel panel-danger" id="erronometime">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Erro</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            O nome do time deve ser composto apenas por letras.
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success">Buscar</button>
+                                        <button type="reset" class="btn btn-danger" id="timeclear">Limpar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulário de um prêmio -->
+                    <div id="premioform">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h2 id="sec0">Buscar Prêmios</h2>
+                                Insira os dados para a busca do prêmio desejado<br><br>
+                                <form role="form" method="get" action="BuscaPremio" id="fpremio">
+                                    <div class="form-group" id="formnomepremio">
+                                        <label class="control-label" for="nomepremio">Nome</label>
+                                        <input type="text" class="form-control" id="nomepremio" name="nome" placeholder="Nome">
+                                    </div>
+                                    <div class="panel panel-danger" id="erronomepremio">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Erro</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            O nome do prêmio deve ser composto apenas por letras.
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success">Buscar</button>
+                                        <button type="reset" class="btn btn-danger" id="premioclear">Limpar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <p class="navbar-text pull-left">
+                    Desenvolvimento para Web &mdash; Engenharia de Software 2 &mdash; Laboratório de Banco de Dados
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Sports Search - Home</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+		<script type="text/JavaScript" src="http://code.jquery.com/jquery-latest.js"> </script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+
+	<body>
+		<header class="navbar navbar-default navbar-static-top" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">Sports Search</a>
+				</div>
+				<nav class="collapse navbar-collapse" role="navigation">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Get Started</a></li>
+						<li><a href="#">Edit</a></li>
+						<li><a href="#">Visualize</a></li>
+						<li><a href="#">Prototype</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="row">
+	  			<div class="col-md-3" id="leftCol">
+	              	
+					<div class="well"> 
+		              	<ul class="nav nav-stacked" id="sidebar">
+							<li><a href="#sec1" id="buscajogador">Buscar Jogadores</a></li>
+							<li><a href="#sec2" id="buscatime">Buscar Times</a></li>
+							<li><a href="#sec3" id="buscapremio">Buscar Prêmios</a></li>
+							<li><a href="#sec4" id="buscaavancada">Busca Avançada</a></li>
+		              	</ul>
+	  				</div>
+
+	      		</div>  
+	      		<div class="col-md-9">
+	              	<div id="menu">
+		              	<h2 id="sec0">Menu Principal</h2>
+		                Use uma das opções ao lado para realizar buscas. Ao selecioná-la, abaixo será mostrado
+		                os campos de busca para você preencher.<br><br>
+		                <img src="images/mainpage.gif" class="img-responsive" alt="Responsive image">
+	                </div>
+
+	                <div id="jogadorform">
+	                	<h2 id="sec0">Buscar Jogadores</h2>
+	                	Insira os dados para a busca do jogador desejado<br><br>
+		                <form role="form">
+		                	
+							<div class="form-group" id="formnomejogador">
+								<label class="control-label" for="nomejogador">Nome</label>
+								<input type="text" class="form-control" id="nomejogador" placeholder="Nome">
+							</div>
+
+							<div id="formsobrenomejogador" class="form-group">
+								<label class="control-label" for="sobrenomejogador">Sobrenome</label>
+								<input type="text" class="form-control" id="sobrenomejogador" placeholder="Sobrenome">
+							</div>
+							<div class="form-group">
+								<label for="datanascjogador">Data de Nascimento</label>
+								<input type="date" class="form-control" id="datanascjogador">
+							</div>
+							<div class="form-group">
+								<label for="menucomp">Selecione o operador de comparação para a data de nascimento do jogador</label>
+								<select class="form-control" id="menucomp">
+									<option value="igual">Igual</option>
+									<option value="diferente">Diferente</option>
+									<option value="maior">Maior</option>
+									<option value="maiorigual">Maior ou igual</option>
+									<option value="menor">Menor</option>
+									<option value="menorigual">Menor ou igual</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-success">Buscar</button>
+							</div>
+						</form>
+					</div>
+
+					<div id="timeform">
+						<h2 id="sec0">Buscar Times</h2>
+	                	Insira os dados para a busca do time desejado<br><br>
+						<form role="form">
+							<div class="form-group" id="formnometime">
+								<label for="nometime">Nome</label>
+								<input type="text" class="form-control" id="nometime" placeholder="Nome">
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-success">Buscar</button>
+							</div>
+						</form>
+					</div>
+
+					<div id="premioform">
+						<h2 id="sec0">Buscar Prêmios</h2>
+	                	Insira os dados para a busca do prêmio desejado<br><br>
+						<form class="form-group" role="form">
+							<div class="form-group">
+								<label for="nomepremio">Nome</label>
+								<input type="text" class="form-control" id="nomepremio" placeholder="Nome">
+							</div>
+							<button type="submit" class="btn btn-success">Buscar</button>
+						</form>
+					</div>
+
+					<div id="avancadaform">
+						<h2 id="sec0">Busca Avançada</h2>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								Option one is this and that&mdash;be sure to include why it's great
+							</label>
+						</div>
+
+						<div class="radio">
+							<label>
+								<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+								Option one is this and that&mdash;be sure to include why it's great
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+								Option two can be something else and selecting it will deselect option one
+							</label>
+						</div>
+					</div>
+      	   		</div>
+		  	</div>
+		</div>
+
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text pull-left">
+					Desenvolvimento para Web &mdash; Engenharia de Software 2 &mdash; Laboratório de Banco de Dados
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
